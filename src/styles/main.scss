@@ -1,0 +1,27 @@
+@charset 'utf-8';
+
+@import "./abstract/_variables";
+@import "./abstract/_mixins";
+@import "./abstract/_overrides";
+
+@import "./base/_reset";
+@import "./base/_typography";
+
+@import "./layout/_header";
+
+@import "./components/_hero";
+
+body {
+  background-color:#111;
+  color:#fff;
+  font-family: $font-stack;
+  font-size: 20px;
+  line-height: 1.4;
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+.main-layout {
+  width: 90%;
+  margin: 0 auto;
+}
