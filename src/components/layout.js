@@ -9,13 +9,13 @@ export default function Layout ({ children }) {
 
   return (
     <div className="main-layout">
-    <Helmet>
-      <html lang="en" />
-      <title>{title}</title>
-      <meta name="description" content={description} />
-    </Helmet>
-    <Header />
-    { children }
+      <Helmet>
+        <html lang="en" />
+        <title>{title}</title>
+        <meta name="description" content={description} />
+      </Helmet>
+      <Header />
+      { children }
     </div>
   );
 }
