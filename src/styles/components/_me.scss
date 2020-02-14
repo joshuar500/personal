@@ -1,0 +1,13 @@
+.me {
+  position: absolute;
+  bottom: 0;
+  right: 2rem;
+  overflow: hidden;
+  img {
+    max-height: 555px;
+
+    @media (max-width: $screen-sm) {
+      max-height: 400px;
+    }
+  }
+}

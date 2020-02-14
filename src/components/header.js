@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 function setActive ({ isCurrent }) {
   return {
     style: {
-      color: isCurrent ? "#333" : "#fff",
+      color: isCurrent ? "#333" : "#999",
     }
   }
 }
