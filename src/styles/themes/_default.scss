@@ -1,6 +1,6 @@
 body {
-  background-color: #FBFBF0;
-  color:#f06114;
+  background-color: #fbfbf0;
+  color: #f06114;
   font-family: $font-stack;
   font-size: 20px;
   line-height: 1.4;
@@ -11,4 +11,16 @@ body {
 .main-layout {
   width: 90%;
   margin: 0 auto;
+}
+
+pre code {
+  word-wrap: normal;
+}
+
+code {
+  font-family: Menlo, Monaco, Consolas, courier new, monospace;
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #4e4e4e;
+  background-color: #b9b9b9;
 }

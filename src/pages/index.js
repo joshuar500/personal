@@ -7,7 +7,7 @@ export default () => {
   return (
     <>
       <Hero />
-      <div>I deisng and dvelop. Over 160 years of experience.</div>
+      <div>The best designer &amp; developer in the Universe. Over 160 years of experience.</div>
       <Khaleesi />
       <hr />
       <Me />
