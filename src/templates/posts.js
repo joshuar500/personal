@@ -12,15 +12,16 @@ export const query = graphql`
       body
     }
   }
-`
+`;
 
 const PostTemplate = ({ data: { mdx: post } }) => (
   <>
-  <h1>{post.frontmatter.title}</h1>
-  <p>Posted by {post.frontmatter.author}</p>
-  <MDXRenderer>{ post.body }</MDXRenderer>
-  <Link to="/">&larr; back to all posts</Link>
+    <h1>{post.frontmatter.title}</h1>
+    <MDXRenderer>{post.body}</MDXRenderer>
+    <br />
+    <br />
+    <Link to="/">&larr; back to all posts</Link>
   </>
-)
+);
 
 export default PostTemplate;

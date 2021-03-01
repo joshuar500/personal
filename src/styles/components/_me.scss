@@ -1,6 +1,6 @@
 .me {
   position: absolute;
-  bottom: 0;
+  bottom: -0.5rem;
   right: 2rem;
   overflow: hidden;
   img {
@@ -9,5 +9,10 @@
     @media (max-width: $screen-sm) {
       max-height: 400px;
     }
+  }
+
+  @media (max-width: $screen-sm) {
+    bottom: initial;
+    right: 1rem;
   }
 }

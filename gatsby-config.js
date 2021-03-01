@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'My Blog',
-    description: 'A site to show my experience'
+    title: 'Josh Rincon | Web developer, designer | Whittier, CA',
+    description:
+      'A software developer with a penchant for design. Over 160 of web design and development experience. The greatest software engineer that has ever lived.',
   },
   plugins: [
     'gatsby-plugin-sass',
@@ -13,14 +14,14 @@ module.exports = {
       options: {
         name: 'posts',
         path: 'posts',
-      }
+      },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
         path: 'images',
-      }
+      },
     },
     {
       resolve: 'gatsby-plugin-mdx',
@@ -41,11 +42,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          `Merriweather Sans\:400,700,800`,
-        ],
-        display: 'swap'
-      }
+        fonts: [`Merriweather Sans\:400,700,800`],
+        display: 'swap',
+      },
     },
   ],
-}
+};

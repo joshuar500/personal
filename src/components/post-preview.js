@@ -3,10 +3,10 @@ import { Link } from 'gatsby';
 
 const PostPreview = ({ post }) => (
   <article>
-    <h3>{post.title}</h3>
-    <p>{post.excerpt}</p>
-    <Link to={post.slug}>read more &rarr;</Link>
+    <h3>
+      <Link to={post.slug}>{post.title} &rarr;</Link>
+    </h3>
   </article>
-)
+);
 
 export default PostPreview;

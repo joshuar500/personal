@@ -6,6 +6,10 @@ body {
   line-height: 1.4;
   padding-top: 120px;
   padding-bottom: 60px;
+
+  @media screen and (max-width: 500px) {
+    padding-top: 80px;
+  }
 }
 
 .main-layout {
