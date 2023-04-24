@@ -7,38 +7,38 @@ module.exports = {
   plugins: [
     'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
-    'gatsby-transformer-sharp',
+    'gatsby-plugin-image',
     'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'posts',
-        path: 'posts',
+        path: `${__dirname}/posts`,
       },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: 'images',
+        path: `${__dirname}/src/images`,
       },
     },
     {
       resolve: 'gatsby-plugin-mdx',
       options: {
         gatsbyRemarkPlugins: ['gatsby-remark-images'],
-        plugins: ['gatsby-remark-images'],
       },
     },
-    {
-      resolve: 'gatsby-plugin-webpack-bundle-analyzer',
-      options: {
-        production: true,
-        disable: !process.env.ANALYZE_BUNDLE_SIZE,
-        generateStatFile: true,
-        analyzerMode: 'static',
-      },
-    },
+    // {
+    //   resolve: 'gatsby-plugin-webpack-bundle-analyser-v2',
+    //   options: {
+    //     production: true,
+    //     disable: !process.env.ANALYZE_BUNDLE_SIZE,
+    //     generateStatFile: true,
+    //     analyzerMode: 'static',
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {

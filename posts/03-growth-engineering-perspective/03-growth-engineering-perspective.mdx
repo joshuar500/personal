@@ -1,0 +1,23 @@
+---
+id: 3
+title: perspective on growth as an engineer
+slug: growth-engineering-perspective
+author: Joshua Rincon
+---
+
+As a product engineer with experience in growth engineering, I've learned that the technical and data-driven side of marketing is what makes the job interesting while (hopefully) having a large impact on the company's goals. I'll try my best to share my perspective on growth engineering and offer some insights into how to improve the accuracy of ad platform metrics.
+
+Growth engineering is a field that involves using technical and analytical skills to drive user acquisition and retention. As such, determining customer acquisition cost (CAC) is typically the first initiative any company has when it begins spending money on advertising. However, relying solely on ad platform metrics to calculate CAC can be risky.
+
+While there are platforms such as Hubspot that can help automate CAC calculations, the metrics that are displayed in the advertising platform should not be trusted. This is because there are many variables that contribute to attribution, and the ad platform does not provide granular insight on how attribution works. Furthermore, working with previous FAANG executives has taught me that nobody actually knows how ad platforms work internally. So they're all hesitant to trust them.
+
+To reconcile ad platform metrics with actual revenue, you should strive to build your own metric dashboard. This can help you tighten up which events fire and reconcile attribution at a granular level. You can also deduplicate the events yourself. You can either build out an event system yourself or use something like Segment or Rudderstack that comes equipped with the more detailed insight that helps companies learn more about the metrics they see on advertising platforms with what events actually fired.
+
+Personally, I prefer keeping Segment/Rudderstack “sources” separate from other connections. This helps with debugging and keeps the control of the set up in the engineers' domain. Specifically, I only like to use Segment/Rudderstack as an event system that is used to reconcile data and for other application-specific uses.
+
+The event system can then give insight into how the ad platform is attributing certain users in their metrics system. If something is off, you are able to debug because you have your own event system. Even when something is not really debuggable (such as ad blockers, different device attribution, etc.), you still have details about each event to make educated decisions. These events can furthermore be saved in a database or warehouse of some sort. This insight additionally gives you more context into your audience, which can surprise you as well.
+
+It's worth noting that ad platform metrics can still provide a quick and easy way to get a high-level view of campaign performance, even if they are not always 100% accurate. However, reconciling these metrics with other data sources can help ensure that you have a more complete and accurate picture of your campaign's effectiveness.
+
+Growth engineering is an exciting field that involves using technical and analytical skills to drive user acquisition and retention. While ad platform metrics can be useful, they should not be relied upon exclusively. Instead, building your own metric dashboard and event system can help you reconcile these metrics with other data sources and gain detailed insight into how the ad platform is attributing certain users. By doing so, you can ensure that you have a more complete and accurate understanding of your campaign's effectiveness, which can help you make better-informed decisions and drive better results.
+

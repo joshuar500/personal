@@ -1,5 +1,4 @@
 import React from 'react';
-import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { graphql, Link } from 'gatsby';
 
 export const query = graphql`
@@ -9,15 +8,14 @@ export const query = graphql`
         title
         author
       }
-      body
     }
   }
 `;
 
-const PostTemplate = ({ data: { mdx: post } }) => (
+const PostTemplate = ({ data: { mdx: post }, children }) => (
   <>
     <h1>{post.frontmatter.title}</h1>
-    <MDXRenderer>{post.body}</MDXRenderer>
+    {children}
     <br />
     <br />
     <Link to="/">&larr; back to all posts</Link>
