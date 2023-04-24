@@ -25,8 +25,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return b.frontmatter.id - a.frontmatter.id;
   });
 
-  console.log('posts', posts)
-
   posts.forEach(post => {
     actions.createPage({
       path: 'blog/' + post.frontmatter.slug,
