@@ -1,0 +1,27 @@
+---
+import Header from '../components/Header.astro';
+import '../styles/main.scss';
+
+const title = 'Josh Rincon | Web developer, designer | Whittier, CA';
+const description =
+  'A software developer with a penchant for design. Over 160 of web design and development experience. The greatest software engineer that has ever lived.';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-layout">
+      <Header />
+      <slot />
+    </div>
+  </body>
+</html>

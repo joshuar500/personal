@@ -1,0 +1,15 @@
+---
+const pathname = Astro.url.pathname;
+---
+
+<header>
+  <a href="/" style={pathname === '/' ? 'color: #333' : 'color: #999'}>
+    Home
+  </a>
+  <a href="/about" style={pathname === '/about' ? 'color: #333' : 'color: #999'}>
+    About
+  </a>
+  <a href="/blog" style={pathname === '/blog' ? 'color: #333' : 'color: #999'}>
+    Blog
+  </a>
+</header>

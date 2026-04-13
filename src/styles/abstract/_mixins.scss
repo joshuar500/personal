@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 @mixin global-link {
   color: $link-color;
   text-decoration: underline;

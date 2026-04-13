@@ -1,0 +1,16 @@
+---
+interface Props {
+  post: {
+    title: string;
+    slug: string;
+  };
+}
+
+const { post } = Astro.props;
+---
+
+<article>
+  <h3>
+    <a href={`/blog/${post.slug}`}>{post.title} &rarr;</a>
+  </h3>
+</article>
